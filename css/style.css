@@ -112,7 +112,7 @@
       margin-bottom: 88px;
     }
 
-    .primary-btn {
+    .start-btn {
       appearance: none;
       border: none;
       min-width: 168px;
@@ -128,7 +128,7 @@
       transition: opacity 0.2s ease, transform 0.2s ease;
     }
 
-    .primary-btn:hover {
+    .start-btn:hover {
       opacity: 0.86;
       transform: translateY(-1px);
     }
