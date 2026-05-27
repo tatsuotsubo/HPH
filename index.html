@@ -38,7 +38,7 @@
       </p>
 
       <div class="actions">
-        <button class="start-btn" type="button">はじめる</button>
+        <button class="start-btn" popovertarget="modal" popovertarget="show" type="button">はじめる</button>
         <a class="sub-link" href="#">つかってたことがある</a>
       </div>
 
@@ -46,18 +46,14 @@
     </section>
   </main>
 
- <!-- 編集中<section id="modal" class="hidden" aria-hidden="true">
-    <div class="modal-overlay"></div>
-    <div class="modal-contents" role="dialog" aria-label="日とと記が安心できる場所であるために">
-      <button class="modal-close" aria-label="閉じる">×</button>
+  <!-- モーダル（はじめるをクリックしたとき） -->
+  <div id="modal" popover>
+    <!-- <div class="modal-overlay"></div> -->
+    <!-- <div class="modal-contents" role="dialog" aria-label="日とと記が安心できる場所であるために"> -->
+      <button class="modal-close" popovertarget="modal" popovertarget="hide" type="button">×</button>
       <h2 class="modal-title">日とと記が安心できる場所であるために</h2>
-      <p>
-        日とと記は、<strong>だれかを傷つけるためのサービスではありません。</strong><br />
-        だから、<strong>誹謗中傷や差別的な内容は投稿しないでください。</strong><br />
-        もし、そういった内容を見つけたら、運営までお知らせください。
-      </p>
-      <button class="close-btn" type="button">閉じる</button>
-    </div>
-  </section> -->
+      <!-- <button class="close-btn" type="button">閉じる</button> -->
+    <!-- </div> -->
+  </div>
 </body>
 </html>
