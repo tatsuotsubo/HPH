@@ -157,6 +157,13 @@
       top: 0;
     }
 
+    .checkbox-label {
+      display: flex;
+      justify-content: center; /*　中央揃え */
+      gap: 8px; /* チェックボックスとテキストの間のスペース */
+      margin: 28px 0 4px; /* 上下のスペース */
+    }
+
     .sub-link {
       color: #5d5d5d;
       text-decoration: none;
