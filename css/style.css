@@ -150,6 +150,27 @@
       background-color: rgba(0, 0, 0, 0.3);
     }
 
+    .start_btn_2 {
+      appearance: none;
+      border: none;
+      min-width: 168px;
+      padding: 17px 30px 16px;
+      border-radius: 999px;
+      background: #303030;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      letter-spacing: 0.24em;
+      cursor: pointer;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .start_btn_2:hover {
+      opacity: 0.86;
+      transform: translateY(-1px);
+    }
+
     .modal-close {
       background: white;
       position: absolute;
@@ -157,7 +178,22 @@
       top: 0;
     }
 
-    .checkbox-label {
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      /* pointer-events: none; を追加するとホバーも無効になる */
+    }
+
+    /* 活性化時にトランジションでなめらかに変化 */
+    button {
+      transition: opacity 0.2s, background-color 0.2s;
+    }
+
+    button:not(:disabled) {
+      cursor: pointer;
+    }
+
+    .checkbox_label {
       display: flex;
       justify-content: center; /*　中央揃え */
       gap: 8px; /* チェックボックスとテキストの間のスペース */

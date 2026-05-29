@@ -50,7 +50,7 @@
   <div id="modal" popover>
     <!-- <div class="modal-overlay"></div> -->
     <!-- <div class="modal-contents" role="dialog" aria-label="日とと記が安心できる場所であるために"> -->
-      <button class="modal-close" popovertarget="modal" popovertarget="hide" type="button">×</button>
+      <button class="modal-close" popovertarget="modal" popovertarget="hide">×</button>
       <h2 class="modal-title">日とと記が安心できる場所であるために</h2>
       <p>『日とと記』は、日記を投稿するとだれかの日記が届くサービスです。だれにでも見られるわけではないからこそ書けることもあり、そういった安心をまもるために、心にとめておいてほしいことがあります。
       </p>
@@ -62,12 +62,29 @@
       <p>万が一拡散されたらこわい、というときは、投稿画面で「この日記を届けない」にチェックをつけると安心です</p>
       <p>拡散されるリスクを0%にすることはむずかしいですが、このチェックがついた日記はあなたの手元にだけのこり、だれにも届くことがなくなります。不安だなというときには、つかってもらえたらと思います。
       </p>
-      <label class="checkbox-label">
-        <input type="checkbox">読みました！
+      <label class="checkbox_label">
+        <input type="checkbox" class="agree_check">読みました！
       </label>
-      <button class="start-btn" type="button">はじめる</button>
+      <button class="start_btn_2" type="button" disabled>はじめる</button>
+
+
+
       <!-- <button class="close-btn" type="button">閉じる</button> -->
     <!-- </div> -->
   </div>
+
+  <script>
+    const agree_check = document.querySelector('.agree_check');
+    const start_btn_2 = document.querySelector('.start_btn_2');
+
+    agree_check.addEventListener('change', () => {
+      start_btn_2.disabled = !agree_check.checked;
+    });
+  </script>
+
+
 </body>
+
+
+      
 </html>
